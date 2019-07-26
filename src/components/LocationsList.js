@@ -8,7 +8,7 @@ const [locations, setLocations] = useState([]);
 
 useEffect(() => {
    
-    axios.get(`http://rickandmortyapi.com/api/location/`)
+    axios.get(`https://rickandmortyapi.com/api/location/`)
 
     .then(res => {
       setLocations(res.data.results);
