@@ -22,7 +22,7 @@ useEffect(() => {
   }, [locations]);
 
   return <section className='location-list grid-view'>
-             {locations.map(location => <LocationCard name={location.name} />)}
+             {locations.map(location => <LocationCard name={location.name} type={location.type} dimension={location.dimension} residents={location.residents.length} />)}
          </section>
 };
 
